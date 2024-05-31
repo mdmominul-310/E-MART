@@ -71,12 +71,12 @@ public class SelectUser {
 
 		// Add customer button to login as a customer
 		JButton btnCustomer = new JButton("CUSTOMER");
-		// btnCustomer.addActionListener(new ActionListener() {
-		// public void actionPerformed(ActionEvent e) {
-		// CustomerLogin.main(null);
-		// frame.dispose();
-		// }
-		// });
+		btnCustomer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				User_Login.main(null);
+				frame.dispose();
+			}
+		});
 		btnCustomer.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnCustomer.setBounds(149, 164, 116, 42);
 		frame.getContentPane().add(btnCustomer);

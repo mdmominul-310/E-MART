@@ -1,6 +1,4 @@
-
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -16,7 +14,6 @@ import javax.swing.SwingConstants;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
-
 import javax.swing.border.MatteBorder;
 import javax.swing.DebugGraphics;
 import javax.swing.JSeparator;
@@ -72,7 +69,6 @@ public class User_Login extends RegistrationDetails {
 		frame.getContentPane().add(lblUsername);
 
 		// add code for password, password shouldn't be visible
-
 		JLabel lblPassword = new JLabel("Password :");
 		lblPassword.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPassword.setFont(new Font("Tahoma", Font.BOLD, 14));

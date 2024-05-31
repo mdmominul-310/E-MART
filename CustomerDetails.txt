@@ -3,3 +3,9 @@ Customer Contact : 01725893261
 Customer Username : mominul
 Customer Password : 123
 Customer Contact Number : 01727511300
+Customer Username : customer
+Customer Password : customer
+Customer Contact Number : 01450002151
+Customer Username : customer
+Customer Password : customer
+Customer Contact Number : 01452366251
