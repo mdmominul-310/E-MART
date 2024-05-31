@@ -57,7 +57,7 @@ public class SelectUser {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		
+
 		JButton btnAdmin = new JButton("ADMIN");
 		btnAdmin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -69,8 +69,18 @@ public class SelectUser {
 		btnAdmin.setBounds(149, 111, 116, 42);
 		frame.getContentPane().add(btnAdmin);
 
-		//Add customer button to login as a customer
-		
+		// Add customer button to login as a customer
+		JButton btnCustomer = new JButton("CUSTOMER");
+		// btnCustomer.addActionListener(new ActionListener() {
+		// public void actionPerformed(ActionEvent e) {
+		// CustomerLogin.main(null);
+		// frame.dispose();
+		// }
+		// });
+		btnCustomer.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnCustomer.setBounds(149, 164, 116, 42);
+		frame.getContentPane().add(btnCustomer);
+
 		JLabel lblNewLabel = new JLabel(">>>  WELLCOME  <<<");
 		lblNewLabel.setForeground(new Color(0, 0, 160));
 		lblNewLabel.setFont(new Font("Sugarpunch DEMO", Font.BOLD, 22));
@@ -78,7 +88,7 @@ public class SelectUser {
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(10, 11, 414, 32);
 		frame.getContentPane().add(lblNewLabel);
-		
+
 		JLabel lblNewLabel_1 = new JLabel("ONLINE ORDER SYSTEM");
 		lblNewLabel_1.setBackground(new Color(255, 128, 128));
 		lblNewLabel_1.setForeground(new Color(255, 255, 0));
@@ -87,15 +97,15 @@ public class SelectUser {
 		lblNewLabel_1.setHorizontalTextPosition(SwingConstants.CENTER);
 		lblNewLabel_1.setBounds(10, 46, 414, 54);
 		frame.getContentPane().add(lblNewLabel_1);
-		
+
 		JButton btnNewButton = new JButton("Exit");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				frame  = new JFrame("Exit");
-				if(JOptionPane.showConfirmDialog(frame,"Confirm if you want to exit","Online Order System",JOptionPane.YES_NO_OPTION)
-						== JOptionPane.YES_NO_OPTION) {
-			  System.exit(0);
-			  }
+				frame = new JFrame("Exit");
+				if (JOptionPane.showConfirmDialog(frame, "Confirm if you want to exit", "Online Order System",
+						JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION) {
+					System.exit(0);
+				}
 			}
 		});
 		btnNewButton.setBounds(341, 232, 85, 21);
