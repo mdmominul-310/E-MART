@@ -1,5 +1,4 @@
 
-
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -47,11 +46,22 @@ public class Dashboard {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		
-	//add code for electronic
-		//add code for 3rd sub class you will add
-	
-		
+
+		// add code for electronic
+		// add code for 3rd sub class you will add
+		JButton btnElectronic = new JButton("Electronic");
+		btnElectronic.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Electronic.main(null);
+				frame.dispose();
+			}
+		});
+
+		btnElectronic.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnElectronic.setBounds(273, 92, 100, 39);
+		frame.getContentPane().add(btnElectronic);
+
+		// btn for food
 		JButton btnFood = new JButton("Food");
 		btnFood.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -62,14 +72,14 @@ public class Dashboard {
 		btnFood.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnFood.setBounds(273, 152, 100, 39);
 		frame.getContentPane().add(btnFood);
-		
+
 		JLabel lblNewLabel = new JLabel("SHOP NOW !!");
 		lblNewLabel.setBackground(Color.WHITE);
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 25));
 		lblNewLabel.setBounds(32, 11, 373, 70);
 		frame.getContentPane().add(lblNewLabel);
-		
+
 		JButton btnDBack = new JButton("Back");
 		btnDBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -79,11 +89,11 @@ public class Dashboard {
 		});
 		btnDBack.setBounds(358, 233, 66, 17);
 		frame.getContentPane().add(btnDBack);
-		
+
 		JSeparator separator = new JSeparator();
 		separator.setBounds(10, 79, 414, 2);
 		frame.getContentPane().add(separator);
-		
+
 		JSeparator separator_1 = new JSeparator();
 		separator_1.setBounds(10, 213, 414, 3);
 		frame.getContentPane().add(separator_1);
